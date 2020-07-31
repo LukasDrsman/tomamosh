@@ -28,7 +28,7 @@ cd tomamosh
 - `random` - randomizes frame order
 - `reverse` - reverse frame order
 - `invert` - switches each consecutive frame witch each other
-- `bloom` - duplicates positional frame number n times
-- `pulse` - duplicates groups of positional frames n times
-- `overlapped` - copy group of positional frames taken from every nth position
+- `bloom` - duplicates **Positional frame** number n times
+- `pulse` - duplicates groups of **Positional frames** n times
+- `overlapped` - copy group of **Positional frames** taken from every nth position<br><br>
 \*n refers to the number in **Quantity** option
