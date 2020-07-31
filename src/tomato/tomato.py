@@ -165,7 +165,7 @@ def glitchify(filein, mode, audio=0, firstframe=1, countframes=1, positframes=1,
 
     if sys.platform == "linux":
         os.system('xdg-open ' + fileout)
-    elif sys.paltform == "darwin":
+    elif sys.platform == "darwin":
         os.system('open ' + fileout)
     else:
         os.system('start ' + fileout)
