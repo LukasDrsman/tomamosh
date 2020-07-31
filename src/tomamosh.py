@@ -24,6 +24,8 @@ def render():
 
 
 def create_options_selector():
+    new_btn = ttk.Button(root, text="different file", command=select_file)
+    new_btn.grid(row=0, column=1)
     ttk.Separator(root, orient=HORIZONTAL).grid(
         row=1, column=0, columnspan=4, sticky="ew")
     mode_title = ttk.Label(root, text="Mode:").grid(row=2, column=0)
@@ -77,6 +79,8 @@ def create_options_selector():
 def select_file():
     global filein
     filein = fd.askopenfilename()
+    for widget in root.winfo_children():
+        widget.destroy()
     if ".avi" in filein:
         up_btn.destroy()
         filepath = ttk.Label(root, text="file: " +
