@@ -21,7 +21,6 @@ def render():
 
     glitchify(filein, mode_var.get(), audio, frame,
               int(count_entry.get()), int(posit_entry.get()))
-    root.destroy()
 
 
 def create_options_selector():
