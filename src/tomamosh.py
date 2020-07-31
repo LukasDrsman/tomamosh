@@ -93,7 +93,7 @@ root.title('Tomamosh - a tomato frontend')
 s = ttk.Style()
 if sys.platform == "linux":
     s.theme_use('clam')
-elif sys.paltform == "darwin":
+elif sys.platform == "darwin":
     s.theme_use('aqua')
 else:
     s.theme_use('default')
