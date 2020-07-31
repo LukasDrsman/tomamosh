@@ -17,9 +17,10 @@ cd tomamosh
 3. Navigate to `src` directory and run `tomamosh.py` with python
 
 ## Usage
-1. A window with a button "Select AVI file" will appear, click the button
+1. A window with a button **Select AVI file** will appear, click the button
 2. You will be prompted to select avi file
-3. A window with options will appear: <br><br>
+3. A window with options will appear
+4. Change options to desired state and press **Render !**
 ![preview image](https://github.com/LukasDrsman/tomamosh/blob/master/assets/preview.png)
 
 ### Mode:
@@ -28,7 +29,6 @@ cd tomamosh
 - `reverse` - reverse frame order
 - `invert` - switches each consecutive frame witch each other
 - `bloom` - duplicates positional frame number n times
-- `pulse` - duplicates groups of positional frames n times 
-- `overlapped` - copy group of `c` frames taken from every `n`th position
-- `jiggle` - take frame from around current position. `n` parameter is spread size [broken]
- 
+- `pulse` - duplicates groups of positional frames n times
+- `overlapped` - copy group of positional frames taken from every nth position
+\*n refers to the number in **Quantity** option

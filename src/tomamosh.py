@@ -5,7 +5,7 @@ from tkinter import ttk as ttk
 
 modes = ("void", "random", "bloom", "reverse",
          "invert", "pulse", "jiggle", "overlap")
-audios = ("True", "False")
+truths = ("True", "False")
 
 
 def render():
@@ -14,7 +14,12 @@ def render():
     else:
         audio = 1
 
-    glitchify(filein, mode_var.get(), audio, int(frame_entry.get()),
+        if frame_var.get() == "False":
+            frame = 0
+        else:
+            frame = 1
+
+    glitchify(filein, mode_var.get(), audio, frame,
               int(count_entry.get()), int(posit_entry.get()))
     root.destroy()
 
@@ -30,17 +35,17 @@ def create_options_selector():
     ttk.Separator(root, orient=HORIZONTAL).grid(
         row=3, column=0, columnspan=4, sticky="ew")
 
-    audio_title = ttk.Label(root, text="Preserve audio:").grid(row=4, column=0)
+    audio_title = ttk.Label(root, text="Activate audio:").grid(row=4, column=0)
     audio_menu = ttk.Combobox(root, textvariable=audio_var)
-    audio_menu['values'] = audios
+    audio_menu['values'] = truths
 
     ttk.Separator(root, orient=HORIZONTAL).grid(
         row=5, column=0, columnspan=4, sticky="ew")
     audio_menu.grid(row=4, column=1)
 
-    ttk.Label(root, text="How often to glitch:").grid(row=6, column=0)
+    ttk.Label(root, text="Quantity:").grid(row=6, column=0)
     ttk.Label(root, text="Positional frame:").grid(row=8, column=0)
-    ttk.Label(root, text="First frame:").grid(row=10, column=0)
+    ttk.Label(root, text="Ignore first frame:").grid(row=10, column=0)
 
     ttk.Separator(root, orient=HORIZONTAL).grid(
         row=7, column=0, columnspan=4, sticky="ew")
@@ -55,15 +60,15 @@ def create_options_selector():
 
     count_entry = ttk.Entry(root)
     posit_entry = ttk.Entry(root)
-    frame_entry = ttk.Entry(root)
+    frame_menu = ttk.Combobox(root, textvariable=frame_var)
+    frame_menu['values'] = truths
 
     count_entry.grid(row=6, column=1)
     posit_entry.grid(row=8, column=1)
-    frame_entry.grid(row=10, column=1)
+    frame_menu.grid(row=10, column=1)
 
     count_entry.insert(10, "1")
     posit_entry.insert(10, "1")
-    frame_entry.insert(10, "1")
 
     rend_btn = ttk.Button(root, text="Render!", command=render)
     rend_btn.grid(row=17, column=0, sticky="ew", columnspan=4)
@@ -94,8 +99,10 @@ else:
     s.theme_use('default')
 mode_var = StringVar(root)
 audio_var = StringVar(root)
+frame_var = StringVar(root)
 mode_var.set("void")
 audio_var.set("True")
+frame_var.set("True")
 root.grid_rowconfigure(0, weight=1)
 root.grid_columnconfigure(0, weight=1)
 up_btn = ttk.Button(root, text="Select AVI file", command=select_file)

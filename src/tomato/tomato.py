@@ -127,11 +127,6 @@ def glitchify(filein, mode, audio=0, firstframe=1, countframes=1, positframes=1,
                 final.append(x)
                 j = j + 1
 
-    elif mode == "jiggle":
-        amount = int(positframes)
-        final = [clean[constrain(
-            x+int(random.gauss(0, amount)), 0, len(clean)-1)] for x in range(0, len(clean))]
-
     elif mode == "overlap":
         pulselen = int(countframes)
         pulseryt = int(positframes)
