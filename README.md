@@ -8,7 +8,7 @@ A tkinter frontend for [itsKaspar's tomato](https://github.com/itsKaspar/tomato)
 ```sh
 git clone https://github.com/LukasDrsman/tomamosh.git
 cd tomamosh
-./tomamosh        # you can also run `tomamosh` script trough file explorer
+./tomamosh
 ```
 
 ### On windows
