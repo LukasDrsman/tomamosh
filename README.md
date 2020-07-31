@@ -20,7 +20,7 @@ cd tomamosh
 1. A window with a button **Select AVI file** will appear, click the button
 2. You will be prompted to select avi file
 3. A window with options will appear
-4. Change options to desired state and press **Render !**
+4. Change options to desired state and press **Render !** <br><br>
 ![preview image](https://github.com/LukasDrsman/tomamosh/blob/master/assets/preview.png)
 
 ### Mode:
