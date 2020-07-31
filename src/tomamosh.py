@@ -14,10 +14,10 @@ def render():
     else:
         audio = 1
 
-        if frame_var.get() == "False":
-            frame = 0
-        else:
-            frame = 1
+    if frame_var.get() == "False":
+        frame = 0
+    else:
+        frame = 1
 
     glitchify(filein, mode_var.get(), audio, frame,
               int(count_entry.get()), int(posit_entry.get()))
