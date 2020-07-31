@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import filedialog as fd
 from tkinter import ttk as ttk
 
-modes = ("void", "random", "bloom", "reverse",
+modes = ("random", "bloom", "reverse",
          "invert", "pulse", "jiggle", "overlap")
 truths = ("True", "False")
 
@@ -103,7 +103,7 @@ else:
 mode_var = StringVar(root)
 audio_var = StringVar(root)
 frame_var = StringVar(root)
-mode_var.set("void")
+mode_var.set("random")
 audio_var.set("True")
 frame_var.set("True")
 root.grid_rowconfigure(0, weight=1)
