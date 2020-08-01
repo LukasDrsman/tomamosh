@@ -29,7 +29,6 @@ Using gui:
 ![preview image](https://github.com/LukasDrsman/tomamosh/blob/master/assets/preview.png)
 
 ### Mode:
-- `void` - does nothing
 - `random` - randomizes frame order
 - `reverse` - reverse frame order
 - `invert` - switches each consecutive frame witch each other
