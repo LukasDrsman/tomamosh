@@ -4,7 +4,7 @@ A tkinter frontend for [itsKaspar's tomato](https://github.com/itsKaspar/tomato)
 
 ## Install and run
 
-### On unix-like systems (gnu/linux, OSX, bsd, etc.):
+### On unix-like systems (gnu/linux, OSX, bsd, etc.)
 Using cli:
 ```sh
 git clone https://github.com/LukasDrsman/tomamosh.git
@@ -28,7 +28,7 @@ Using gui:
 4. Change options to desired state and press **Render !** <br><br>
 ![preview image](https://github.com/LukasDrsman/tomamosh/blob/master/assets/preview.png)
 
-### Mode:
+### Mode
 - `random` - randomizes frame order
 - `reverse` - reverse frame order
 - `invert` - switches each consecutive frame witch each other
