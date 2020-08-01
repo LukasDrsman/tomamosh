@@ -15,7 +15,7 @@ tomamosh
 Using gui:
 1. Download zip on https://github.com/LukasDrsman/tomamosh/archive/master.zip
 2. Unzip the file
-3. Run `install.sh` with bash
+3. Run `install.sh` with administrator privileges
 4. `tomamosh` should be available in your application launcher
 
 ### On macOS
@@ -30,7 +30,7 @@ tomamosh
 Using gui:
 1. Download zip on https://github.com/LukasDrsman/tomamosh/archive/master.zip
 2. Unzip the file
-3. Run `install.sh` with bash
+3. Run `install.sh` with administrator privileges
 4. Run `tomamosh` in your terminal emulator
 
 ### On windows
