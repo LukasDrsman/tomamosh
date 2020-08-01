@@ -4,17 +4,34 @@ A tkinter frontend for [itsKaspar's tomato](https://github.com/itsKaspar/tomato)
 
 ## Install and run
 
-### On unix-like systems (gnu/linux, OSX, bsd, etc.)
+### On linux
 Using cli:
 ```sh
 git clone https://github.com/LukasDrsman/tomamosh.git
 cd tomamosh
-./tomamosh
+sudo ./install.sh
+tomamosh
 ```
 Using gui:
 1. Download zip on https://github.com/LukasDrsman/tomamosh/archive/master.zip
 2. Unzip the file
-3. Run `tomamosh` with bash
+3. Run `install.sh` with bash
+4. `tomamosh` should be available in your application launcher
+
+### On macOS
+Using cli:
+```sh
+git clone https://github.com/LukasDrsman/tomamosh.git
+cd tomamosh
+sudo ./install.sh
+tomamosh
+```
+
+Using gui:
+1. Download zip on https://github.com/LukasDrsman/tomamosh/archive/master.zip
+2. Unzip the file
+3. Run `install.sh` with bash
+4. Run `tomamosh` in your terminal emulator
 
 ### On windows
 1. Download zip on https://github.com/LukasDrsman/tomamosh/archive/master.zip

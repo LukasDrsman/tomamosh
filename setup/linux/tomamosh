@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Linux Shell Executable
+
+python /usr/lib/tomamosh/tomamosh.py

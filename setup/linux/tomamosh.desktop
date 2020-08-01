@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=tomamosh
+Comment=Frontend for tomato, an AVI mosher
+Exec=tomamosh
+Icon=/usr/lib/tomamosh/icon.png
+Terminal=false

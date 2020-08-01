@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Darwin Shell Executable
+
+python /usr/local/lib/tomamosh/tomamosh.py
